@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador</title>
+    <!-- Image -->
+    <link rel="icon" type="image/x-icon" href="images/ADL.png">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- Custom css -->
+    <link rel="stylesheet" href="css/teme.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
+   
+</head>
+
+<body>
+    <!---============ container del form ==========---->
+    <div class="container-fluid  bg-teme-form text-white">
+        <div class="container px-5">
+            <div class="col">
+                <div class="row text-center pt-5">
+                    <h1 class="fw-boold">Encuentra tu seguro</h1>
+                </div>
+                <div class="container py-3">
+                    <div  class="row">
+                        <p class="m-0 text-center text-sm-center text-md-start text-lg-start text-xl-start">¿Que tipo de seguro quiere?</p>
+                    </div>
+                </div>
+                <form  id="formSimulator">
+                    <!---============ Selectores tipo de seguro ==========---->
+                    <div  class="container">
+                        <div  class="row">
+                            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 mb-3">
+                                <div class="d-grid gap-1">
+                                    <input type="radio" class="btn-check" name="typeInsurance" id="option1" autocomplete="off" value="1">
+                                    <label name="labelInsurance" class="btn btn-outline-light br-10" for="option1">Auto</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 mb-3">
+                                <div class="d-grid gap-1">
+                                    <input type="radio" class="btn-check" name="typeInsurance" id="option2" autocomplete="off" value="2">
+                                    <label name="labelInsurance" class="btn btn-outline-light br-10" for="option2">Moto</label>
+                                </div>
+                            </div>
+                            
+                            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 mb-3">
+                                <div class="d-grid gap-1">
+                                    <input type="radio" class="btn-check" name="typeInsurance" id="option3" autocomplete="off" value="3">
+                                    <label name="labelInsurance" class="btn btn-outline-light br-10" for="option3">Tecnologia</label>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div  class="row px-4">
+                        <hr class="px-5" color="white" size="4px">
+                    </div>
+                    <!---============ Campos del form ==========---->
+                    <div class="container">
+                        <div class="row">
+
+                            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 mb-3">
+                                <input name="name" id="name" class="form-control bg-transparent text-white placeholder-white br-10" type="text" placeholder="Nombre">
+                                <p id="nameError" class="m-0 fw-light fs-6 text-warning form_input-error-inactive">Su nombre es requerido, solo letras.</p>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 mb-3">
+                                <input name="surname" id="surname" class="form-control bg-transparent text-white placeholder-white br-10" type="text" placeholder="Apellido">
+                                <p id="surnameError" class="m-0 fw-light fs-6 text-warning form_input-error-inactive">Su apellido es requerido, solo letras.</p>
+                            </div>           
+                            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 mb-3">
+                                <input name="phone" id="phone" class="form-control bg-transparent text-white placeholder-white br-10" type="text" placeholder="Teléfono" >
+                                <p id="phoneError" class="m-0 fw-light fs-6 text-warning form_input-error-inactive">Su Teléfono es requerido, 6 a 14 numeros.</p>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 mb-3">
+                                <input name="email" id="email" class="form-control bg-transparent text-white placeholder-white br-10" type="email" placeholder="E-Mail" >
+                                <p id="emailError" class="m-0 fw-light fs-6 text-warning form_input-error-inactive">Su correo es requerido, ejemplo123@email.com.</p>
+                            </div>            
+                            <div class="col12  mb-3">
+                                <input  name="date" id="date" type="text" class="form-control bg-transparent text-white placeholder-white br-10"  placeholder="Fecha de nacimiento" />
+                                <p id="dateError" class="m-0 fw-light fs-6 text-warning form_input-error-inactive">Su fecha de nacimient es requerida.</p>
+                            </div>            
+                            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 mb-3">
+                                <select name="ocupation" id="ocupation" class="form-select text-white bg-transparent  br-10 select-option" >
+                                    <option value="null" disabled selected>Ocupacion</option>
+                                    <option value="1">Empleado</option>
+                                    <option value="2">Pensionado</option>
+                                    <option value="3">Independiente</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 mb-3">
+                                <input name="income" id="income" class="form-control text-white bg-transcontrol bg-transparent text-white placeholder-white br-10" type="text" placeholder="Ingresos Mensuales" >
+                                <p id="incomeError" class="m-0 fw-light fs-6 text-warning form_input-error-inactive">Su Ingresos es requerido, solo numeros.</p>
+                            </div>
+                            <div class="col12  mb-3">
+                                <input name="appraise" id="appraise" class="form-control bg-transparent text-white placeholder-white br-10" type="text" placeholder="Avalúo de objeto">
+                                <p id="appraiseError" class="m-0 fw-light fs-6 text-warning form_input-error-inactive">Su Avalúo es requerido, solo numeros.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!---============ Boton Cotizar ==========---->
+                    <div class="container pb-5 pt-3">
+                        <div class="d-grid gap-1 mb-3">
+                            <button id="quotation" type="submit" class="btn btn-light br-10">Cotizar</button>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+     <!---============ Contenedor  Iframes ==========---->
+    <div class="container-fluid bg-black view_iframes" id="container_iframes">
+        <div class="container pt-4">
+            <div class="row"><h1 id="nameInfo"  class=" text-center text-white"></h1></div>
+            <div class="row"><p id="messageInfo" class="text-center text-white fs-4"></p></div>
+        </div>
+        <div class="container py-4">
+            <div class="row justify-content-lg-center">
+                <!---============ Basic Iframes ==========---->
+                <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 mb-3 hident_card" id="container_iframes_basic">
+                    <iframe id="basicInsurance" height="360px"  width="100%" ></iframe>
+                </div>
+                <!---============ Gold Iframes ==========---->
+                <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 mb-3 hident-card" id="container_iframes_gold">
+                    <iframe id="goldInsurance" height="360px"  width="100%" ></iframe>
+                </div>
+                <!---============ Black Iframes ==========---->
+                <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 mb-3 hident_card" id="container_iframes_black">
+                    <iframe id="blackInsurance" height="360px" width="100%" ></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---============ Scripts ==========---->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="js/insurance.js"></script>
+</body>
+</html>

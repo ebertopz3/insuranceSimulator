@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Bootstrap -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+   <!-- Custom css -->
+   <link rel="stylesheet" href="card_css.css">
+</head>
+<body>
+    <div class="container-fluid level-container">
+        <!-- Card insurance -->
+        <div id="infoCard" class="card text-white h-card col">
+            <div class="card-body">
+                <h5 id="card_title" class="text-start card-title mb-3"></h5>
+                <p class="text-start m-0 fs-card-text">• Cobertura del <span id="porcent"></span> del valor avaluado.</p>
+                <p class="text-start m-0 fs-card-text">• Pago mensual o anual.</p>
+                <p class="text-start m-0 fs-card-text">• Puedes asegurar <span id="text_insurance"></span>.</p>
+                <p class="text-start hident_text fs-card-text m-0" id="text_basic">• Puedes acceder con ingresos minimos.</p>
+                <p class="text-start m-0 fs-card-text" id="theft_protection">• Protección contra robos.</p>
+                <p class="text-start m-0 fs-card-text" id="damage_protection">• Protección contra daños.</p>
+                <hr color="white" size="4px">
+                <div class="container m-0 pt-0">
+                    <div class="row">
+                    <div class="col-7">
+                        <p class="text-start m-0">Pago mensual</p>
+                    </div>
+                    <div class="col-5">
+                        <p id="monthly" class="text-end m-0 text-size-small"></p>
+                    </div>
+                    </div>
+                </div>
+                <div class="container m-0 pt-0">
+                    <div class="row">
+                    <div class="col-7">
+                        <p class="text-start m-0 text-button fw-boold">Pago anual</p>
+                    </div>
+                    <div class="col-5">
+                        <p id="annual" class="text-end m-0 text-size-small"></p>
+                    </div>
+                    </div>
+                </div>
+                
+                <p class="text-center m-2"><button class="btn btn-outline-light br-20 px-5 py-1 text-size-small">Solicitar</button></p>
+            </div>
+        </div>
+    </div>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+    <script src="card.js"></script>
+</body>
+</html>

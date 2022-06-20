@@ -1,0 +1,37 @@
+body {
+    background-color: transparent !important;
+}
+.bg-card-basic {
+    background-color: #6624DD;
+}
+.bg-card-gold {
+    background-color: #FED80B;
+}
+.bg-card-black {
+    background-color: rgba(32, 29, 29, 0.911);
+}
+.h-card {
+    min-height: 300px;
+    max-height: 365px;
+    max-width: 300px;
+}
+
+button.br-20 {
+    border-radius: 20px !important;
+}
+.text-size-small {
+    font-size: 13px;
+}
+
+.hident_text {
+    display: none;
+}
+p.fs-card-text {
+    font-size: 13px;
+}
+
+div.level-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

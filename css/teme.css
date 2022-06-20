@@ -1,0 +1,82 @@
+.bg-teme-form {
+    background-color: #6624DD;
+}
+
+.br-10 {
+    border-radius: 10px !important;
+}
+/**
+// -----------------------------------------------------------------------------------------------------
+// @ Inputs del form
+// -----------------------------------------------------------------------------------------------------
+*/
+input.placeholder-white::-webkit-input-placeholde {
+    color: white !important;
+}
+input.placeholder-white::-moz-placeholder {
+color: white !important;
+}
+input.placeholder-white::-ms-input-placeholder {
+color: white !important;
+}
+input.placeholder-white::placeholder {
+    color: white !important;
+}
+
+/**
+// -----------------------------------------------------------------------------------------------------
+// @ Select del form
+// -----------------------------------------------------------------------------------------------------
+*/
+select.select-option option {
+    color: rgba(32, 28, 28, 0.678);
+}
+
+/**
+// -----------------------------------------------------------------------------------------------------
+// @ Buttons del form y card
+// -----------------------------------------------------------------------------------------------------
+*/
+button.br-10 {
+    border-radius: 10px !important;
+}
+button.br-15 {
+    border-radius: 15px !important;
+}
+/**
+// -----------------------------------------------------------------------------------------------------
+// @ Form y Validaciones 
+// -----------------------------------------------------------------------------------------------------
+*/
+
+.form_input-error {
+    color: rgb(240, 107, 133) !important;
+    box-shadow: 3px 1px 7px rgba(243, 67, 24, 0.445) !important;
+}
+.form_input-error::-webkit-input-placeholde {
+    color: rgb(240, 107, 133) !important;
+    box-shadow: 3px 1px 7px rgba(243, 67, 24, 0.445) !important;
+}
+
+.form_input-error-active {
+	display: block;
+}
+.form_input-error-inactive {
+	display: none;
+}
+
+/**
+// -----------------------------------------------------------------------------------------------------
+// @ iframes
+// -----------------------------------------------------------------------------------------------------
+*/
+.view_iframes {
+    display: none;
+}
+.hident_card {
+    display: none;
+}
+.h-iframes {
+    min-height: 305px !important;
+    max-height: 385px !important;
+}
